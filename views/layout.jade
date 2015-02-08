@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/index.min.css')
+    //- For development
+    script(src="//localhost:35729/livereload.js")
+    script(src="/javascripts/index-lib.min.js")
+  body
+    block content
+
+    script(src="javascripts/main.js")

@@ -30,7 +30,7 @@ medium = 850px
 small = 650px
 extrasmall = 500px
 
-//Font sizes
+// Font sizes
 
 content-large-title = 4em
 content-title = 3em
@@ -40,6 +40,9 @@ content-profile = 1.1em
 content-normal = 1em
 content-small = .85em
 content-extrasmall = .6em
+
+// Bar Size
+nav-height = 48px
 
 bg-size ()
     -webkit-background-size: arguments;
@@ -52,10 +55,19 @@ bg-size ()
     width 0px
     height 0px
     overflow hidden
-    
+
+a
+    reset-link()
+
 nav
-    height 30px;
+    height nav-height
     ul
+        text-align center
+        padding-top 16px
+        li
+            display inline
+            margin 0px 16px
+            
         
 
 html

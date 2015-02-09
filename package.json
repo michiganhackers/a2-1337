@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "setup": "npm install",
-    "gruntwork": "killall grunt; grunt compile; grunt watch&",
-    "gruntworkProd": "killall grunt; grunt compile;",
-    "start": "npm run-script gruntwork; nodemon bin/www",
-    "startProd": "npm run-script gruntworkProd; node bin/www"
+    "gruntworkDev": "killall grunt; grunt compile; grunt watch&",
+    "gruntwork": "killall grunt; grunt compile;",
+    "startDev": "npm run-script gruntworkDev; nodemon bin/www",
+    "start": "npm run-script gruntwork; node bin/www"
   },
   "devDependencies": {
     "grunt": "~0.4.5",

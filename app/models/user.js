@@ -4,7 +4,6 @@ var jsonSchema = {
 
     email: String,
     name: String,
-    major: String,
     year: String,
     github: String,
     personalSite: String

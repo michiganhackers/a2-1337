@@ -30,7 +30,7 @@ medium = 850px
 small = 650px
 extrasmall = 500px
 
-//Font sizes
+// Font sizes
 
 content-large-title = 4em
 content-title = 3em
@@ -41,32 +41,95 @@ content-normal = 1em
 content-small = .85em
 content-extrasmall = .6em
 
+// Bar Size
+nav-height = 48px
+
 bg-size ()
-    -webkit-background-size: arguments;
-    -moz-background-size: arguments;
-    -o-background-size: arguments;
+  -webkit-background-size: arguments;
+  -moz-background-size: arguments;
+  -o-background-size: arguments;
 
 .hidden
-    display none
-    height 0px
-    width 0px
-    height 0px
-    overflow hidden
-    
+  display none
+  height 0px
+  width 0px
+  height 0px
+  overflow hidden
+
+a
+  reset-link()
+
 nav
-    height 30px;
-    ul
-        
+  height nav-height
+  width 100%
+  position fixed
+  top 0
+  left 0
+  background white
+  z-index 1
+  ul
+    text-align center
+    padding-top 16px
+    li
+      display inline
+      margin 0px 16px
+      
+    
 
 html
-    height 100%
+  height 100%
 
-    section.header-section
-        background A2-1337-main
-        height 600px
+  section.header-section
+    padding-top nav-height
+    background A2-1337-main
+    height 600px
+    
 
-        div.header-content
-            color offwhite
-            font-size content-large-title
-            align(horizontal)
-            margin-top 300px
+    div.header-content
+      color offwhite
+      font-size content-large-title
+      align(horizontal)
+      margin-top 300px
+  
+  section.register-section
+    height 600px
+    background offwhite
+    
+  section.about-section
+    height 600px
+    background A2-1337-main
+    
+  section.partners-section
+    height 600px
+    background offwhite
+    padding 0px 48px
+    box-sizing border-box
+    div.partners-content
+      margin 0 10%
+      div.sponsor
+        background-size contain
+        background-position center
+        background-origin content-box
+        background-repeat no-repeat
+        box-sizing border-box
+      div.top.sponsor
+        padding 16px;
+        width 100%
+      .farmlogs
+        background-image url("../images/farmlogs.png")
+        height 240px
+      .michigan-hackers
+        background-image url('../images/michigan-hackers.png')
+        height 160px
+  section.footer
+    height 200px
+      
+        
+    
+
+
+
+
+
+
+

@@ -2,8 +2,18 @@ extends layout
 
 block content
 
-    section.header-section
-        div.header-content
-            h1 #A2-1337
-
-
+  section.header-section
+    div.header-content
+      h1 #A2-1337
+  section.register-section
+    form.register-section(name="register")
+      input(type="text" name="Full Name")
+      input(type="text" name="Email")
+      input(type="text" name="Year")
+      input(type="text" name="Links")
+      button(type="submit") 
+  section.about-section
+  section.partners-section
+    div.partners-content
+      div.top.sponsor.farmlogs
+      div.top.sponsor.michigan-hackers

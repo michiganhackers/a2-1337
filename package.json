@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "setup": "npm install && npm run-script config",
-    "prepublish": "killall grunt; grunt compile; grunt watch&",
-    "start": "npm run-script prepublish; nodemon bin/www"
+    "setup": "npm install",
+    "gruntwork": "killall grunt; grunt compile; grunt watch&",
+    "gruntworkProd": "killall grunt; grunt compile;",
+    "start": "npm run-script gruntwork; nodemon bin/www",
+    "startProd": "npm run-script gruntworkProd; node bin/www"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -36,6 +38,9 @@
     "nib": "~1.0.4",
     "rupture": "~0.6.1",
     "serve-favicon": "~2.2.0",
-    "stylus": "0.42.3"
+    "stylus": "0.42.3",
+    "lodash": "~3.1.0",
+    "mongoose": "~3.8.23",
+    "validator": "~3.28.0"
   }
 }

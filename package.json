@@ -5,7 +5,7 @@
   "scripts": {
     "setup": "npm install",
     "prepublish": "killall grunt; grunt compile; grunt watch&",
-    "start": "npm run-script prepublish; nodemon bin/www"
+    "start": "npm run-script prepublish; nodemon bin/www",
     "startProd": "npm run-script prepublish; node bin/www"
   },
   "devDependencies": {
